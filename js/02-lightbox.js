@@ -1,14 +1,7 @@
-import { galleryItems } from './gallery-items.js';
+import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
 console.log(galleryItems);
-
-
-//li class="gallery__item">
-  // <a class="gallery__link" href="large-image.jpg">
-     // <img class="gallery__image" src="small-image.jpg" alt="Image description" />
-  // </a>
-//</li>
 
 
 
@@ -27,7 +20,6 @@ function createImagesMarkup(galleryItems) {
    <a class="gallery__link" href="${original}">
       <img class="gallery__image" 
       src="${preview}" 
-
       data-sourse = "${original}"
       alt="${description}"
        />
@@ -39,10 +31,9 @@ function createImagesMarkup(galleryItems) {
 }
 
 const lightbox = new SimpleLightbox(".gallery a", {
-    captionDelay: 250,
-    captionsData: "alt",
-  });
-
+  captionDelay: 250,
+  captionsData: "alt",
+});
 
 function onImagesContainerClick(event) {
   event.preventDefault();
